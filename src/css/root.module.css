@@ -1,0 +1,24 @@
+:root{
+    --primary-color: #4CAF50;
+    --secondary-color: #ff9800;
+    --font-family: 'Poppins', Arial, sans-serif;
+    --background-gradient: linear-gradient(180deg, #56b1d4 0%, #df7edf 100%);
+    --text-color: #dfffff;
+}
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    background: var(--background-gradient);
+    min-height: 300vh;
+}
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}

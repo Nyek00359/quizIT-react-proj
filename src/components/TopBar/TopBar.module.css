@@ -1,0 +1,27 @@
+.MyTopBar {
+    width: 97vw;
+    height: 130px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    justify-content: space-between;
+    padding: 0 12px;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.MyTopBar a {
+    grid-column: span 2;
+    color: #fff;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: none;
+    margin-right: 2fr; /* Remove left margin */
+}
+.MyTopBar a:hover {
+    text-decoration: underline;
+}
+.Logo {
+    grid-column: span 6;
+    font-weight: bold;
+    font-size: 3.5rem;
+}
