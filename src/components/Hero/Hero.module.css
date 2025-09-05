@@ -1,0 +1,117 @@
+.Hero{
+    min-width: 100vw;
+    min-height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+
+    background: #77adcc  linear-gradient(180deg, #77adcc  5%,#59a3c0  100%);;  /* can be gradient or picuture*/
+}
+.Tagline{
+    padding: 30vh 5rem;
+    z-index: 2;
+    grid-column: span 4;
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}  
+.Tagline .Description {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.5;
+} 
+.Logo {
+    display: flex;
+    margin-top: 10vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-column: span 8;
+    mix-blend-mode: multiply;
+    z-index: 1;
+}
+
+.Logo img {
+    min-width: 120px;
+    min-height: 120px;
+}
+
+.Tagline .GetStarted {
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #8bb9d4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 2.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.Tagline .GetStarted:hover {
+    background-color: #6faedc;
+}
+@media (max-width: 1557px) {
+    .Hero{
+    min-height: 80vh;
+    grid-template-columns: repeat(12, 1fr); 
+    padding: 20vh 5rem;
+    background: #77adcc ;
+    }
+    .Tagline{
+    grid-column: span 6;
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    }  
+    .Tagline .Description {
+        margin-left: 1rem;
+        font-size: 1rem;
+        line-height: 1.5;
+    } 
+    .Tagline .GetStarted {
+        margin-top: 2rem;
+        padding: 0.8rem 1.5rem;
+        background-color: #8bb9d4;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 2.2rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .Logo {
+        align-items: center;
+        grid-column: span 6;
+        padding: 0 2rem;
+    }
+}
+/* Responsive styles for smaller screens */
+@media (max-width: 720px) {
+    .Hero{
+    min-height: 80vh;
+    grid-template-columns: repeat(12, 1fr); 
+    padding: 10vh 1rem;
+    background: #77adcc ;
+    }
+    .Tagline{
+    grid-column: span 12;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 1.5rem 1.5rem;
+    }  
+    .Tagline .Description {
+        margin-left: 1rem;
+        font-size: 1rem;
+        line-height: 1.5;
+    } 
+    .Logo {
+        grid-column: span 12;
+        position: absolute;
+        padding: 0 2rem;
+    }
+    .Logo img {
+        width: 87vw;
+    }
+}

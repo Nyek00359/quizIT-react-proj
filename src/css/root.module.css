@@ -1,8 +1,9 @@
 :root{
     --primary-color: #4CAF50;
     --secondary-color: #ff9800;
-    --font-family: 'Poppins', Arial, sans-serif;
-    --background-gradient: linear-gradient(180deg, #56b1d4 0%, #df7edf 100%);
+    --hero: linear-gradient(180deg, #77adcc  5%,#59a3c0  100%);
+    --font-family: 'Gill Sans Ultra Bold', 'Poppins Rounded', 'Poppins', Arial, sans-serif;
+    --background-gradient: linear-gradient(180deg, #56b1d4 5%, #df7edf 100%);
     --text-color: #dfffff;
 }
 body {
@@ -11,14 +12,4 @@ body {
     margin: 0;
     padding: 0;
     background: var(--background-gradient);
-    min-height: 300vh;
-}
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-}
-.container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px;
-}
+    min-height: 600vh;}

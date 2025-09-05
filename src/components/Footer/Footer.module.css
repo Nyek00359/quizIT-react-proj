@@ -1,0 +1,56 @@
+.Footer{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #f7f7f7 ;
+
+    padding: 1rem 0;
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    z-index: -1;
+}
+
+.Footer .Copyright {
+    text-align: end;
+    grid-column: span 6 ;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+.Footer .Contacts {
+    font-size: 16px;
+    grid-column: span 6 ;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+.Footer a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.Footer a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 720px) {
+    .Footer{
+        grid-template-columns: repeat(4, 1fr); 
+        padding: 1rem 0;
+        font-size: 1rem;
+    }
+    .Footer .Copyright {
+        text-align: center;
+        grid-column: span 4 ;
+        font-size: 14px;
+        margin: 0;
+    }
+    .Footer .Contacts {
+        text-align: center;
+        font-size: 14px;
+        grid-column: span 4 ;
+        margin: 0;
+    }
+}
