@@ -1,16 +1,14 @@
 .Hero{
-    min-width: 100vw;
     min-height: 40vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr); 
-
     background: #77adcc  linear-gradient(180deg, #77adcc  5%,#59a3c0  100%);;  /* can be gradient or picuture*/
 }
 .Tagline{
-    padding: 30vh 5rem;
+    padding: 30vh 9rem;
     z-index: 2;
     grid-column: span 4;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 20px;
     line-height: 1.5;
@@ -53,11 +51,10 @@
 @media (max-width: 1557px) {
     .Hero{
     min-height: 80vh;
-    grid-template-columns: repeat(12, 1fr); 
-    padding: 20vh 5rem;
-    background: #77adcc ;
+    padding: 20vh 3rem;
     }
     .Tagline{
+    padding: 30vh 3rem;
     grid-column: span 6;
     font-size: 4.5rem;
     font-weight: bold;
@@ -89,10 +86,8 @@
 /* Responsive styles for smaller screens */
 @media (max-width: 720px) {
     .Hero{
-    min-height: 80vh;
-    grid-template-columns: repeat(12, 1fr); 
-    padding: 10vh 1rem;
-    background: #77adcc ;
+
+    margin: 10vh 0;
     }
     .Tagline{
     grid-column: span 12;
@@ -112,6 +107,7 @@
         padding: 0 2rem;
     }
     .Logo img {
-        width: 87vw;
+        width: 88vw;
+        height: auto;
     }
 }

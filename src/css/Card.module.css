@@ -1,0 +1,40 @@
+.Card{
+    min-height: 40vh;
+    padding: 40px;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    background: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+.Card img {
+    display: flex;
+    height: auto;
+    border-radius: 10px;
+}
+.Card .CardTitle {
+    grid-column: span 6;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.Card .CardDescription {
+    grid-column: span 6;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #fff;
+    text-align: justify;
+}
+.Card .LearnMore {
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: #8bb9d4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

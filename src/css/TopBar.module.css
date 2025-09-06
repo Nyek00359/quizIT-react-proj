@@ -1,38 +1,35 @@
 .MyTopBar {
-    width: 100vw;
     height: 130px;
+    padding: 1rem 3rem;
     align-items: center;
-
     display: grid;
     grid-template-columns: repeat(12, 1fr); 
     color: #fff;
 }
 .MyTopBar a {
+    text-align: center;
     grid-column: span 1;
     color: #fff;
     font-weight: bold;
     font-size: 1.8rem;
     text-decoration: none;
+    margin-right: 2fr; /* Remove left margin */
 }
 .MyTopBar a:hover {
     text-decoration: underline;
 }
 .Logo {
     grid-column: span 9;
-    padding: 0rem 6rem;
+
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
 }
-.Logo img {
-    min-width: 120px;
-    min-height: 120px;
-}
+
 /* Responsive styles for smaller screens */
 @media (max-width: 1024px) {
     .MyTopBar {
         height: 90px;
-        grid-template-columns: repeat(12, 1fr);
-        padding: 0 6px;
+        padding: 0 4rem;
         font-size: 0.9rem;
     }
     .MyTopBar a {
@@ -49,9 +46,6 @@
 /* Responsive styles for smaller screens */
 @media (max-width: 720px) {
     .MyTopBar {
-        height: 90px;
-        grid-template-columns: repeat(4, 1fr);
-        padding: 0 6px;
         font-size: 0.9rem;
     }
     .MyTopBar a {

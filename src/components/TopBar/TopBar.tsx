@@ -1,4 +1,4 @@
-import styles from './TopBar.module.css';
+import styles from '../../css/TopBar.module.css';
 import type { TopBarProps } from '../../props/Config';
 
 const TopBar: React.FC<TopBarProps> = ({ Logo = "QuizIT" , Nav = ["Join", "Host", "About"] }) =>{

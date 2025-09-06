@@ -1,0 +1,37 @@
+.Wrapper{
+    left: 0;
+    margin: 5rem;
+    padding: 30px ;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+
+}
+.Wrapper .Title{
+    grid-column: span 12;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.Wrapper .Containers{
+    grid-column: span 12;
+    display: grid;
+    gap: 20px; /* Space between containers */
+    margin-top: 20px; /* Space above the containers */
+}
+@media (max-width: 1028px) {
+    .Wrapper {
+        min-width: 100vw;
+    }
+}
+@media (max-width: 468px) {
+    .Wrapper{
+        margin: 1rem;
+        min-width: 100vw;
+    }
+}

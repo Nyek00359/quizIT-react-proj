@@ -7,9 +7,13 @@
     --text-color: #dfffff;
 }
 body {
+
     font-family: var(--font-family);
     color: var(--text-color);
+    background: var(--background-gradient);
     margin: 0;
     padding: 0;
-    background: var(--background-gradient);
-    min-height: 600vh;}
+    display: flex;
+    align-items: start; 
+    
+}
